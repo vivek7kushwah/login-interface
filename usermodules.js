@@ -10,7 +10,7 @@
 
 // module.exports = mongoose.model("user", userSchema);
 import postgres from 'postgres'
-
+const DATABASE_URL=postgresql://postgres:[YOUR-PASSWORD]@db.ccjdcvsbdpechjaufhti.supabase.co:5432/postgres
 const connectionString = process.env.DATABASE_URL
 const sql = postgres(connectionString)
 
