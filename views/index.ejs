@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
 </head>
 <body>
-    <form action="/login" method="post" >
-        <input type="text" placeholder="enter your id" name="id">
-        <input type="text" placeholder="enter your password" name="password">
+    <form id="loginForm" action="/login" method="post" >
+        <input type="text" placeholder="enter your id" name="id" required>
+        <input id="password" type="text" placeholder="enter your password" name="password" required>
         <button type="submit">submit</button>
     </form>
+    <script src="javascripts/javascript.js"></script>
 </body>
 </html>
