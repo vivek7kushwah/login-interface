@@ -31,8 +31,8 @@ app.post("/login",async(req,res)=>{
     let user = await userModel.findOne({userid : req.body.id});
     if (!user) return res.send("something wents wrong id...");
 
-    console.log("Password from request:", req.body.password);
-    console.log("Hashed password from DB:", user.password_hash);
+    // console.log("Password from request:", req.body.password);
+    // console.log("Hashed password from DB:", user.password_hash);
     if (req.body.password == user.password_hash){
         let id = req.body.id;
         let token = jwt.sign({id},"currentlylogedin");
@@ -57,7 +57,7 @@ app.post("/login",async(req,res)=>{
     }
 })
 app.listen(3000,(err)=>{
-    console.log("server startat");
+    console.log("server started...");
 })
 
 
