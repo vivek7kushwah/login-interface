@@ -1,1 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    div{
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://home.iitd.ac.in/images/gallery/gallery-lg1.jpg"); 
+        background-size: cover;
+        form{
+            backdrop-filter: blur(5px);
+            padding-bottom: 15%;
+            height: 40%;
+            width: 40%;
+            border: 2px solid black;
+            display: flex;
+          
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                margin-bottom: 20px;
 
+            }
+            input{
+                width: 60%;
+                height: 10%;
+                margin: 5px;
+                border-radius: 5px;
+                text-align: center;
+                transition: all 0.2s ease-in;
+            }
+            button{
+                margin-top: 10px;
+                width: 20%;
+                height: 10%;
+                border-radius: 5px;
+                background-color: rgb(240, 78, 78);
+                transition: all 0.3s ease-in;
+
+            }
+            button:hover{
+                width: 21%;
+                height: 11%;
+                background-color: rgb(161, 19, 19);
+            }
+
+        
+
+    }
+    }
+}
+.hove:hover{
+    width: 61%;
+    height: 11%;
+    border: 2px solid blue;
+}
+    
+        
+        
